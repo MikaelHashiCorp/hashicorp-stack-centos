@@ -7,3 +7,4 @@ config/nomad-client-host-volumes.hcl
 vault-keys.json
 nomad-server-vault-token.json
 !*/.gitkeep
+.DS_Store
