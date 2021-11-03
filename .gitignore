@@ -1,8 +1,6 @@
 .vagrant/*
 env/*
 jobs/*
-host_volumes/*
-config/nomad-client-host-volumes.hcl
 *.lic
 vault-keys.json
 nomad-server-vault-token.json
