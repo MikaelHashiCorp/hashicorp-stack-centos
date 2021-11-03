@@ -6,3 +6,4 @@ vault-keys.json
 nomad-server-vault-token.json
 !*/.gitkeep
 .DS_Store
+*.txt
