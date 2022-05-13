@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
   
   1.upto(CONSUL_SERVERS) do |n|
     config.vm.define "consul-server-#{n}" do |server|
-      server.vm.box = "watsonian/hashicorp-stack-ubuntu"
+      server.vm.box = "mikaelhashicorp/hashicorp-stack-centos"
       server.vm.hostname = "consul-server-#{n}"
       server.vm.network "private_network", type: "dhcp"
 
@@ -30,7 +30,7 @@ Vagrant.configure(2) do |config|
 
   1.upto(VAULT_SERVERS) do |n|
     config.vm.define "vault-server-#{n}" do |server|
-      server.vm.box = "watsonian/hashicorp-stack-ubuntu"
+      server.vm.box = "mikaelhashicorp/hashicorp-stack-centos"
       server.vm.hostname = "vault-server-#{n}"
       server.vm.network "private_network", type: "dhcp"
 
@@ -51,7 +51,7 @@ Vagrant.configure(2) do |config|
 
   1.upto(NOMAD_SERVERS) do |n|
     config.vm.define "nomad-server-#{n}" do |server|
-      server.vm.box = "watsonian/hashicorp-stack-ubuntu"
+      server.vm.box = "mikaelhashicorp/hashicorp-stack-centos"
       server.vm.hostname = "nomad-server-#{n}"
       server.vm.network "private_network", type: "dhcp"
 
@@ -71,7 +71,7 @@ Vagrant.configure(2) do |config|
 
   1.upto(NOMAD_CLIENTS) do |n|
     config.vm.define "nomad-client-#{n}" do |server|
-      server.vm.box = "watsonian/hashicorp-stack-ubuntu"
+      server.vm.box = "mikaelhashicorp/hashicorp-stack-centos"
       server.vm.hostname = "nomad-client-#{n}"
       server.vm.network "private_network", type: "dhcp"
 

@@ -1,4 +1,4 @@
-# hashicorp-stack-ubuntu
+# hashicorp-stack-centos
 
 This is a Vagrant project that spins up a fully functional HashiCorp stack. It
 uses a custom box that has all necessary packages pre-installed and by default
@@ -34,7 +34,7 @@ vagrant up
 ```
 
 The initial boot time may take a bit if you haven't previously downloaded the
-`watsonian/hashicorp-stack-ubuntu` box because it's 2.5GB. Once you have that
+`mikaelhashicorp/hashicorp-stack-centos` box because it's 2.5GB. Once you have that
 box on your local system, booting up the stack should take around 4 minutes.
 
 ## Access the Web UI

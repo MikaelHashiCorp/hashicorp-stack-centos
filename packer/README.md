@@ -1,7 +1,7 @@
-# hashicorp-stack-ubuntu box
+# hashicorp-stack-centos box
 
-These are the packer build files for the `watsonian/hashicorp-stack-ubuntu` box.
-The box itself is based on the `bento/ubuntu-21.04` box and pre-loads the following:
+These are the packer build files for the `mikaelhashicorp/hashicorp-stack-centos` box.
+The box itself is based on the `bento/centos-21.04` box and pre-loads the following:
 
 - Consul Enterprise, Nomad Enterprise, and Vault Enterprise pre-installed.
 - `jq`, `cfssl`, `cfssljson`, and `cfssl-certinfo` pre-installed.
@@ -14,7 +14,7 @@ To build a new version of the box file, simply [install Packer](https://www.pack
 and then run the following from this directory:
 
 ```
-packer build hashicorp-stack-ubuntu.pkr.hcl
+packer build hashicorp-stack-centos.pkr.hcl
 ```
 
 This will cause the required base box to be fetched, will spin it up, and then
@@ -27,10 +27,10 @@ Once the box has been built with any modifications you want, you can add it to
 Vagrant by running:
 
 ```
-vagrant box add build/package.box --name "hashicorp-stack-ubuntu"
+vagrant box add build/package.box --name "hashicorp-stack-centos"
 ```
 
-You can then reference it in your Vagrant files as simply `hashicorp-stack-ubuntu`.
+You can then reference it in your Vagrant files as simply `hashicorp-stack-centos`.
 
 # Acknowledgements
 
